@@ -18,4 +18,6 @@ public class AppConstant {
 	
 	public static final Integer NORMAL_ROLE=602;
 	
+	public static final String GIT="git changes";
+	
 }
