@@ -59,11 +59,16 @@ public class CommentServiceimpl  implements CommentService{
 
 
 
-	@Override
+
+    @Override
 	public CommentDTO getCoomentById(Integer commentId) {
 		 Comment comment = commentrepo.findById(commentId).orElseThrow(()->new ResourceNotFoundExceptions("Comment", "commentId", commentId));
 	
 		 return modelmapper.map(comment, CommentDTO.class);
 	}
 
+    @Override
+    public void changeStatus(int status) {
+        System.out.println("status changed successfully");
+    }
 }

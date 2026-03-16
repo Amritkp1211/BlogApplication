@@ -9,4 +9,6 @@ public interface CommentService {
 	CommentDTO getCoomentById(Integer commentId);
 	
 	void deleteComment(Integer commentID);
+
+    void changeStatus(int status);
 }
